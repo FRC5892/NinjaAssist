@@ -53,7 +53,8 @@ def main():
     
     os.rename("src/main/java/frc/team0000", "src/main/java/frc/team" + team_number)
     
-    print("\nSuccess! This file will now self-destruct. Go team " + team_number + "!")
+    print("\nSuccess! Use `gradlew deploy` to upload to the robot.")
+    print("This file will now self-destruct. Go team " + team_number + "!")
     
     os.remove(sys.argv[0])
     
